@@ -1,16 +1,116 @@
 /*Universal Styles*/
+div {
+  border: 1px solid black;
+}
 
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.active {
+  background-color: rgb(216, 216, 216);
+}
+
+.smallPic img {
+  width: 35%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /*Header Section*/
+header {
+  background-color: white;
+  width: 100%;
+}
 
+nav {
+  height: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-left: 16px;
+}
+
+.banner {
+  padding: 32px 24px;
+  background-color: rgb(216, 216, 216);
+}
+
+.bannerImage {
+  width: 60%;
+}
+
+.bannerImage img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60%;
+}
+
+.bannerCta {
+  margin-left: 24px;
+}
+
+.bannerCtaBtn {
+  color: white;
+  background-color: rgb(74, 74, 74);
+  text-align: center;
+  padding: 8px;
+}
 
 /*Information Section*/
 
+.infoBar {
+  width: 40%;
+}
+
+.sideInfoText {
+  width: 65%;
+}
 
 /*Courses Section*/
+.coursesMain h1 {
+  text-align: center;
+}
+
+.courseContain {
+  margin-left: 72px;
+  margin-right: 72px;
+  align-content: space-between;
+  justify-content: center;
+}
 
 
 /*Exhibit Section*/
+.exhibit h1 {
+  text-align: center;
+}
 
+.exhibitBar {
+  width: 40%;
+}
 
 /*Footer Section*/

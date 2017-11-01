@@ -9,8 +9,11 @@
   <body>
     <!--Header Section -->
     <header>
-      <nav>
-        <span class="colmar">COLMAR</span><span class="academy">ACADEMY</span>
+      <nav class="flex">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="logo" />
+         <span class="colmar">COLMAR</span><span class="academy">ACADEMY</span>
+       </div>
         <ul>
           <li>On Campus</li>
           <li>Online</li>
@@ -18,8 +21,9 @@
           <li>Sign In</li>
         </ul>
       </nav>
-      <div class="banner">
+      <div class="banner flex">
         <div class="bannerImage">
+          <img src="./resources/images/banner.jpg" />
         </div>
         <div class="bannerCta">
           <div class="bannerCtaText">
@@ -33,7 +37,7 @@
       </div>
     </header>
     <!--Information Section -->
-    <div class="info">
+    <div class="info flex">
       <div class="mainInfo">
         <div class="mainInfoImg">
         </div>
@@ -44,8 +48,9 @@
         </div>
       </div>
       <div class="infoBar">
-        <div class="sideInfo">
-          <div class="sideInfoImage">
+        <div class="sideInfo flex">
+          <div class="smallPic">
+            <img src="./resources/images/information-orientation.jpg" />
           </div>
           <div class="sideInfoText">
             <h3>Orientation date</h3>
@@ -53,8 +58,9 @@
             <a href="#">Read More</a>
           </div>
         </div>
-        <div class="sideInfo">
-          <div class="sideInfoImage">
+        <div class="sideInfo flex">
+          <div class="smallPic">
+            <img src="./resources/images/information-campus.jpg" />
           </div>
           <div class="sideInfoText">
             <h3>Our Campus</h3>
@@ -62,8 +68,9 @@
             <a href="#">Read More</a>
           </div>
         </div>
-        <div class="sideInfo active">
-          <div class="sideInfoImage">
+        <div class="sideInfo flex active">
+          <div class="smallPic">
+            <img src="./resources/images/information-guest-lecture.jpg" />
           </div>
           <div class="sideInfoText">
             <h3>Our guest lecture</h3>
@@ -76,90 +83,96 @@
     <!--Courses Section -->
     <div class="coursesMain">
       <h1>Start Learning</h1>
-      <div class="course">
-        <div class="courseImage">
+      <div class="courseContain flex">
+        <div class="course">
+          <div class="courseImage">
+          </div>
+          <div class="courseText">
+            <h3>Software engineering</h3>
+            <p>COURSES</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
         </div>
-        <div class="courseText">
-          <h3>Software engineering</h3>
-          <p>COURSES</p>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="course">
+          <div class="courseImage">
+          </div>
+          <div class="courseText">
+            <h3>Computer art</h3>
+            <p>COURSES</p>
+            <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
         </div>
-      </div>
-      <div class="course">
-        <div class="courseImage">
+        <div class="course">
+          <div class="courseImage">
+          </div>
+          <div class="courseText">
+            <h3>Design</h3>
+            <p>COURSES</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
         </div>
-        <div class="courseText">
-          <h3>Computer art</h3>
-          <p>COURSES</p>
-          <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+        <div class="course">
+          <div class="courseImage">
+          </div>
+          <div class="courseText">
+            <h3>Data</h3>
+            <p>COURSES</p>
+            <p>Data Science, Big Data, SQL, Data Visualisation</p>
+          </div>
         </div>
-      </div>
-      <div class="course">
-        <div class="courseImage">
+        <div class="course">
+          <div class="courseImage">
+          </div>
+          <div class="courseText">
+            <h3>Business</h3>
+            <p>COURSES</p>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
         </div>
-        <div class="courseText">
-          <h3>Design</h3>
-          <p>COURSES</p>
-          <p>User Experience Design, User Research, Visual Design</p>
+        <div class="course">
+          <div class="courseImage">
+          </div>
+          <div class="courseText">
+            <h3>Marketing</h3>
+            <p>COURSES</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
         </div>
-      </div>
-      <div class="course">
-        <div class="courseImage">
-        </div>
-        <div class="courseText">
-          <h3>Data</h3>
-          <p>COURSES</p>
-          <p>Data Science, Big Data, SQL, Data Visualisation</p>
-        </div>
-      </div>
-      <div class="course">
-        <div class="courseImage">
-        </div>
-        <div class="courseText">
-          <h3>Business</h3>
-          <p>COURSES</p>
-          <p>Product Development, Business Development, Startup</p>
-        </div>
-      </div>
-      <div class="course">
-        <div class="courseImage">
-        </div>
-        <div class="courseText">
-          <h3>Marketing</h3>
-          <p>COURSES</p>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
-        </div>
-      </div>
+     </div>
     </div>
     <!--Exhibit Section -->
     <div class="exhibit">
       <h1>Thesis Exhibit</h1>
-      <div class="exhibitVideoSection">
-        <div class="exhibitVideo">
-        </div>
-        <div class="exhibitVideoText">
-          <h3>Reimagine urban</h3>
-          <p>"Spicy jalapeno bacon ipsum dolor amet andouille turkey meatball t-bone ground round boudin rump cow. Salami pork loin frankfurter, ground round rump pig doner ball tip pork drumstick leberkas pancetta spare ribs."</p>
-        </div>
-      </div>
-      <div class="exhibitBar">
-        <div class="exhibitBarInfo active">
-          <div class="exhibitBarImage">
+        <div class="exhibitContain flex">
+        <div class="exhibitVideoSection">
+          <div class="exhibitVideo">
           </div>
-          <div class="exhibitBarText">
-            <h3>Fisma: Design and Prototype</h3>
-            <p>Designer showcase of new prototype product<p>
+          <div class="exhibitVideoText">
+            <h3>Reimagine urban</h3>
+            <p>"Spicy jalapeno bacon ipsum dolor amet andouille turkey meatball t-bone ground round boudin rump cow. Salami pork loin frankfurter, ground round rump pig doner ball tip pork drumstick leberkas pancetta spare ribs."</p>
           </div>
         </div>
-        <div class="exhibitBarInfo">
-          <div class="exhibitBarImage">
+        <div class="exhibitBar">
+          <div class="exhibitBarInfo flex active">
+            <div class="smallPic">
+              <img src="./resources/images/thesis-fisma.jpg" />
+            </div>
+            <div class="exhibitBarText">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product<p>
+            </div>
           </div>
-          <div class="exhibitBarText">
-            <h3>Now and then</h3>
-            <p>Research study about New York</p>
+          <div class="exhibitBarInfo flex">
+            <div class="smallPic">
+              <img src="./resources/images/thesis-now-and-then.jpg" />
+            </div>
+            <div class="exhibitBarText">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
           </div>
         </div>
-      </div>
+     </div>
     </div>
     <!--Footer Section -->
     <footer>
