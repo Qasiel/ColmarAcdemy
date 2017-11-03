@@ -4,9 +4,22 @@ div {
 }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(153, 153, 153);
 }
 
+h1, h2, h3, h4 {
+  font-weight: bold;
+  color: rgb(74, 74, 74);
+}
+
+h1 {
+  font-size: 3.0rem;
+}
+
+h3 {
+  font-size 2.0rem;
+}
 .flex {
   display: flex;
 }
@@ -45,6 +58,7 @@ nav {
 
 .colmar {
   font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 nav ul {
@@ -53,6 +67,7 @@ nav ul {
 
 nav ul li {
   padding-left: 16px;
+  color: rgb(74, 74, 74);
 }
 
 .banner {
@@ -60,18 +75,17 @@ nav ul li {
   background-color: rgb(216, 216, 216);
 }
 
-.bannerImage {
-  width: 60%;
-}
+
 
 .bannerImage img {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 60%;
+  max-width: 60%;
 }
 
 .bannerCta {
   margin-left: 24px;
+  width: 20%;
 }
 
 .bannerCtaBtn {
@@ -92,15 +106,46 @@ nav ul li {
 }
 
 /*Courses Section*/
+.coursesMain {
+  background-color: rgb(216, 216, 216);
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .coursesMain h1 {
   text-align: center;
 }
 
 .courseContain {
-  margin-left: 72px;
-  margin-right: 72px;
   align-content: space-between;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+  }
+
+.course .courseImage {
+  height: auto;
+  width: 33%;
+  margin: 0 auto;
+}
+
+.courseImage img {
+  display: block;
+  max-width: 100%;
+}
+
+.courseText {
+  background-color: rgb(255, 255, 255);
+  padding: 16px 16px 24px 16px;
+}
+
+.courseText p {
+  margin-top: 8px;
 }
 
 
@@ -114,3 +159,20 @@ nav ul li {
 }
 
 /*Footer Section*/
+
+footer {
+  height: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav ul li {
+  padding-left: 16px;
+  color: rgb(74, 74, 74);
+}
