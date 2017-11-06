@@ -1,7 +1,4 @@
 /*Universal Styles*/
-div {
-  border: 1px solid black;
-}
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
@@ -18,22 +15,53 @@ h1 {
 }
 
 h3 {
-  font-size 2.0rem;
+  font-size: 1.5rem;
+}
+
+a {
+  color: rgb(74, 74, 74);
+  text-decoration: none;
 }
 .flex {
   display: flex;
+}
+
+/*Sidebar Styles (Universal)*/
+
+.sideBar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sideBarText {
+  width: 65%;
+  flex: 2;
+}
+
+.sideBarText p {
+  margin: 8px 0;
+}
+
+.smallPic {
+  width: 35%
+  height: auto;
+  padding: 16px;
+  flex: 1;
+}
+
+.smallPic img {
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .active {
   background-color: rgb(216, 216, 216);
 }
 
-.smallPic img {
-  width: 35%;
-  height: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
 /*Header Section*/
 header {
@@ -49,16 +77,20 @@ nav {
   align-items: center;
 }
 
-.logo {
+a .logo {
   display: inline-flex;
   height: 32px;
   justify-content: center;
   align-items: center;
 }
 
-.colmar {
+a .colmar {
   font-weight: bold;
   color: rgb(0, 0, 0);
+}
+
+a .academy {
+  color: rgb(153, 153, 153);
 }
 
 nav ul {
@@ -71,76 +103,132 @@ nav ul li {
 }
 
 .banner {
-  padding: 32px 24px;
+  padding: 32px 0px;
   background-color: rgb(216, 216, 216);
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-
+.bannerImage {
+  width: 60%;
+}
 
 .bannerImage img {
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  padding-left: 24px;
 }
 
 .bannerCta {
-  margin-left: 24px;
+  padding-left: 24px;
   width: 20%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.bannerCtaText h1 {
+  margin: 15px 0;
+}
+
+.bannerCtaText h3 {
+  margin: 25px 0;
 }
 
 .bannerCtaBtn {
-  color: white;
   background-color: rgb(74, 74, 74);
   text-align: center;
   padding: 8px;
 }
 
+.bannerCtaBtn a {
+  color: white;
+}
+
 /*Information Section*/
+
+.mainInfo {
+  padding: 32px 24px;
+  width: 60%;
+  border-right: 1px solid lightgray;
+}
+
+.mainInfoImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.mainInfoText h1 {
+  margin: 32px 0px 24px 0px;
+}
+
+.quoteSource {
+  margin-top: 24px;
+  color: black;
+}
 
 .infoBar {
   width: 40%;
+  padding-top: 16px;
 }
 
-.sideInfoText {
+.infoBar .sideBar {
+  border-bottom: 1px solid lightgray;
+}
+
+.sideBarText {
   width: 65%;
+}
+
+.bottom {
+  margin-bottom: 32px;
 }
 
 /*Courses Section*/
 .coursesMain {
   background-color: rgb(216, 216, 216);
-  padding-left: 72px;
-  padding-right: 72px;
+  width: 100%;
 }
 
 .coursesMain h1 {
   text-align: center;
+  padding: 32px 0px 16px 0px;
 }
 
 .courseContain {
-  align-content: space-between;
+  justify-content: space-between;
+  padding: 0 72px;
+  max-width: 100%;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
 }
 
 .course {
-    flex: 1;
-    padding: 2rem;
-    background-color: white;
-  }
-
-.course .courseImage {
-  height: auto;
-  width: 33%;
-  margin: 0 auto;
+  margin: 16px;
+  width: 30%;
+  background-color: white;
 }
 
-.courseImage img {
-  display: block;
+.course img {
   max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+
 }
 
 .courseText {
+  padding: 16px 16px 40px 16px;
   background-color: rgb(255, 255, 255);
+}
+
+.computer {
   padding: 16px 16px 24px 16px;
 }
 
@@ -148,10 +236,23 @@ nav ul li {
   margin-top: 8px;
 }
 
-
 /*Exhibit Section*/
+.exhibit {
+  margin-bottom: 32px;
+}
+
 .exhibit h1 {
   text-align: center;
+  padding: 32px 0;
+}
+
+.exhibitVideoSection {
+  width: 60%;
+  padding: 0 24px;
+}
+
+.exhibitVideoText h3 {
+  margin: 24px 0px 8px 0px;
 }
 
 .exhibitBar {
@@ -161,18 +262,18 @@ nav ul li {
 /*Footer Section*/
 
 footer {
-  height: 64px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 16px 24px;
+  margin-bottom: 16px;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid lightgray;
 }
 
-footer nav ul {
+footer ul {
   display: flex;
 }
 
-footer nav ul li {
+footer ul li {
   padding-left: 16px;
   color: rgb(74, 74, 74);
 }
