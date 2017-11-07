@@ -1,6 +1,6 @@
 /*Universal Styles*/
 
-html {
+body {
   font-family: 'Source Sans Pro', sans-serif;
   color: rgb(153, 153, 153);
 }
@@ -8,6 +8,7 @@ html {
 h1, h2, h3, h4 {
   font-weight: bold;
   color: rgb(74, 74, 74);
+  font-family: 'Source Sans Pro Bold', sans-serif;
 }
 
 h1 {
@@ -24,6 +25,16 @@ a {
 }
 .flex {
   display: flex;
+}
+
+@media only screen and (max-width : 450px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 /*Sidebar Styles (Universal)*/
@@ -44,9 +55,13 @@ a {
   margin: 8px 0;
 }
 
+.sideBarText a {
+  color: rgb(96, 157, 228);
+}
+
 .smallPic {
-  width: 35%
-  height: auto;
+  width: 35%;
+
   padding: 16px;
   flex: 1;
 }
@@ -62,6 +77,30 @@ a {
   background-color: rgb(216, 216, 216);
 }
 
+.mobileSmallPic {
+  display: none;
+}
+
+@media only screen and (max-width : 450px) {
+
+  .smallPic {
+    width: 100%;
+    padding: 0;
+  }
+
+  .smallPic img {
+    padding: 16px;
+  }
+
+  .desktopSmallPic {
+    display: none;
+  }
+
+  .mobileSmallPic {
+    display: block;
+  }
+
+}
 
 /*Header Section*/
 header {
@@ -102,6 +141,13 @@ nav ul li {
   color: rgb(74, 74, 74);
 }
 
+nav .navIcons {
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  display: none;
+}
+
 .banner {
   padding: 32px 0px;
   background-color: rgb(216, 216, 216);
@@ -125,7 +171,7 @@ nav ul li {
 }
 
 .bannerCta {
-  padding-left: 24px;
+  margin-left: 24px;
   width: 20%;
   height: auto;
   align-content: center;
@@ -148,6 +194,58 @@ nav ul li {
 
 .bannerCtaBtn a {
   color: white;
+}
+
+@media only screen and (max-width : 450px) {
+
+  a .logo {
+    display: none;
+  }
+
+  nav .navLinks {
+    display: none;
+  }
+
+  nav .navIcons {
+    display: flex;
+    width: 100%;
+  }
+
+  nav .navIcons li {
+    align-content: space-between;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding: 0;
+
+  }
+
+  .bannerImage {
+    width: 100%;
+  }
+
+  .bannerImage img {
+    padding: 0;
+  }
+
+  .bannerCta {
+    width: 100%;
+    padding: 0;
+  }
+
+  .bannerCtaText {
+    padding: 32px 16px;
+  }
+
+  .bannerCtaText h3 {
+    margin: 32px 0 24px 0;
+  }
+
+  .bannerCtaBtn {
+    background-color: rgb(155, 155, 155);
+  }
+
 }
 
 /*Information Section*/
@@ -187,6 +285,27 @@ nav ul li {
 
 .bottom {
   margin-bottom: 32px;
+}
+
+@media only screen and (max-width : 450px) {
+
+  .mainInfo {
+    display: none;
+  }
+
+  .infoBar {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .sideBar {
+    flex-direction: column;
+  }
+
+  .infoBar .sideBar {
+    border: none;
+  }
+
 }
 
 /*Courses Section*/
@@ -236,6 +355,44 @@ nav ul li {
   margin-top: 8px;
 }
 
+@media only screen and (max-width : 450px) {
+
+  .coursesMain {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 24px;
+   }
+
+   .coursesMain h1 {
+     padding: 32px 0px 8px 0px
+   }
+
+  .course {
+    width: 100%;
+    margin: 4px 0px;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .courseText {
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+    padding: 16px 16px 24px 16px;
+  }
+
+  .courseText p {
+    display: none;
+  }
+
+  .courseContain {
+    padding: 0 16px;
+    flex-direction: column;
+  }
+
+}
+
 /*Exhibit Section*/
 .exhibit {
   margin-bottom: 32px;
@@ -243,7 +400,7 @@ nav ul li {
 
 .exhibit h1 {
   text-align: center;
-  padding: 32px 0;
+  margin: 32px 0;
 }
 
 .exhibitVideoSection {
@@ -257,6 +414,31 @@ nav ul li {
 
 .exhibitBar {
   width: 40%;
+}
+
+@media only screen and (max-width : 450px) {
+
+  .exhibit {
+    margin: 0;
+  }
+
+  .exhibitBar {
+    display: none;
+  }
+
+  .exhibit h1 {
+    margin: 32px 0px 16px 0px;
+  }
+
+  .exhibitVideoSection {
+    width: 100%;
+    padding: 0;
+  }
+
+  .exhibitVideoText {
+    display: none;
+  }
+
 }
 
 /*Footer Section*/
@@ -276,4 +458,20 @@ footer ul {
 footer ul li {
   padding-left: 16px;
   color: rgb(74, 74, 74);
+}
+
+@media only screen and (max-width : 450px) {
+
+  footer {
+    margin: 24px 0 0 0;
+    padding: 0 16px;
+  }
+
+  footer span {
+    margin: 16px 0;
+  }
+
+  footer .footLinks{
+    display: none;
+  }
 }
