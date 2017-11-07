@@ -1,8 +1,0 @@
-CHECKLIST
-
-- Finish putting assets on site using HTML
-- Find font(s) & implement
-- Create & implement favicon using favicon-generator.org
-- Finish CSS layout
-- Read Day 3 Article
-- Read Days 4, 5, 6 & 7 lesson
